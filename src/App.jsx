@@ -34,6 +34,8 @@ function reducer(state, action) {
       };
     case "start":
       return { ...state, status: "active" };
+    case "finish":
+      return { ...state, status: "finished" };
     case "nextQuestion":
       return { ...state, index: state.index + 1, answer: null };
     case "newAnswer": {
