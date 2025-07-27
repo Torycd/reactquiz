@@ -1,8 +1,8 @@
 import React from "react";
 
-function NextButton({ dispatch, answer, index, numQuestions }) {
+function NextButton({ dispatch, answer, index, numQuestion }) {
   if (answer === null) return null;
-  if (index < numQuestions - 1)
+  if (index < numQuestion - 1)
     return (
       <button
         className="btn btn-ui"
@@ -10,8 +10,8 @@ function NextButton({ dispatch, answer, index, numQuestions }) {
       >
         Next
       </button>
-    );
-  if (index === numQuestions - 1)
+    )
+  if (index === numQuestion - 1)
     return (
       <button
         className="btn btn-ui"
